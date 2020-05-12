@@ -1,0 +1,27 @@
+<html>
+<body>
+<center>
+ <body bgcolor = "#CCCCCC">
+<font face="Trebuchet" color="Black">
+ <p>Click here to <a href="index.html">return to my home page. </a>
+<br/><br/>
+<script language = "JavaScript">
+    function rollIn(daImage)
+    {
+	daImage.src="images/roll2.jpg";
+    }
+    function rollOut(daImage)
+    {
+	   daImage.src="images/roll1.jpg";
+    }
+
+
+</script>
+</head>
+<body>
+<center>
+<br/> <br/> <br/> <br/>   
+<img src="images/roll1.jpg" width = 600 onmouseout="rollOut(this)" onmouseover="rollIn(this)"/>
+</body>
+</html>
+

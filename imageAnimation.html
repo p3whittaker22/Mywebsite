@@ -1,0 +1,60 @@
+<html>
+<head>
+    <body bgcolor = "#CCCFFF">
+<font face="Trebuchet" color="Black">
+ <p>Click here to <a href="index.html">return to my home page. </a>
+<script language="JavaScript">
+var srcList = ["images/imgAnim/img0.jpg", 
+               "images/imgAnim/img1.jpg", 
+               "images/imgAnim/img2.jpg", 
+               "images/imgAnim/img3.jpg",  
+               "images/imgAnim/img4.jpg",  
+               "images/imgAnim/img5.jpg"];  
+               	   
+var index = 0;
+var loopCount = 0;
+
+
+function begin()
+{
+index = index +1;
+// my list has 9 elements, so the last element is
+// at index 8
+if( index > 5) // larger than 8 will error.
+{
+    index = 0;
+}
+document.getElementById("myPic").src = srcList[index];
+      if(loopCount <5
+       { 
+       
+        setTimeout("begin()",1000);
+       }
+    else
+       {
+        time = clearTimeout
+        loopCount = 0
+       }
+
+}
+</script>
+</head>
+<body>
+<center>
+<h1>Manarola Italy</h1>
+<img id="myPic" src="images/imgAnim/img0.jpg" width="600"/>
+
+<br/><br/>
+<input type="button" value="Start!" onclick="begin()">
+
+</center>
+</body>
+</html>
+
+
+
+
+
+
+
+
